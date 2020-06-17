@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ho Chee Hau Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale: 1">
+<meta name="keywords" content="portfolio">
+<meta name="description" content="hocheehau">
+<link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class="topnav" id="myTopnav">
+<a href="javascript:void(0);" class="icon" onclick="topnav()"><i class="fa fa-bars"></i></a>
+<a href="">Home</a>
+<a href="">My Profile</a>
+<a href="">Resume</a>
+</div>
+
+<div class="container">
+<img src="banner.jpg" alt="banner" style="width:100%; filter: brightness(60%)">
+<div class="centered">My Portfolio</div>
+</div>
+
+<div class="row">
+<div id="menulist" class="col-2 col-s-2 menu">
+<ul>
+<li onclick="menulist()">Menu List</li>
+<li>Movie Website</li>
+<li onclick="jisoo()">Jisoo</li>
+<li onclick="jennie()">Jennie</li>
+<li onclick="rose()">Rose</li>
+<li onclick="lisa()">Lisa</li>
+</ul>
+</div>
+
+<div id="divName" class="col-10 col-s-10" style="text-align: center;">
+<h1 id="titleName" >Hello World</h1>
+<img id="imageName" src="" style="display: none;">
+<fieldset id="fieldName" style="display: none;">
+<legend style="font-size: 24px;" >Introduction</legend>
+<p id="introductionName" style="content: justify"></p>
+</fieldset>
+</div>
+
+
+</div>
+
+<div class="footer">
+<p>Ho Chee Hau@2020</p>
+</div>
+
+<script>
+function topnav() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className= "topnav";
+}
+}
+
+function menulist() {
+var x = document.getElementById("menulist");
+if (x.className === "col-2 col-s-2 menu") {
+x.className += " responsive";
+} else {
+x.className= "col-2 col-s-2 menu";
+}
+}
+
+function jisoo() {
+document.getElementById("divName").style="text-align: center; border-left: 2px solid black;";
+document.getElementById("titleName").innerHTML="Kim Jisoo";
+document.getElementById("imageName").src="jisoo.jpg";
+document.getElementById("imageName").style="display: block; width: 30%; height: auto; margin-left: auto; margin-right: auto; border: 2px solid black";
+document.getElementById("fieldName").style="border: 2px solid black; margin: 20px; display: block;";
+document.getElementById("introductionName").innerHTML="Kim Ji-soo (Korean: 김지수; born January 3, 1995), better known mononymously as Jisoo, is a South Korean singer and actress. She made her debut as a vocalist in August 2016 as a member of the girl group Blackpink under YG Entertainment.";
+}
+
+function jennie() {
+document.getElementById("divName").style="text-align: center; border-left: 2px solid black;";
+document.getElementById("titleName").innerHTML="Kim Jennie";
+document.getElementById("imageName").src="jennie.jpg";
+document.getElementById("imageName").style="display: block; width: 30%; height: auto; margin-left: auto; margin-right: auto; border: 2px solid black";
+document.getElementById("fieldName").style="border: 2px solid black; margin: 20px; display: block;";
+document.getElementById("introductionName").innerHTML="Kim Jennie (Korean: 김제니; born January 16, 1996), better known by the mononym Jennie, is a South Korean singer and rapper. Born and raised in South Korea, Jennie briefly moved to New Zealand and the age of eight until returning back in 2010. She debuted as a member of the girl group Blackpink in August 2016 under YG Entertainment, and soon made her solo debut with single album, Solo on November 12, 2018.";
+}
+
+function rose() {
+document.getElementById("divName").style="text-align: center; border-left: 2px solid black;";
+document.getElementById("titleName").innerHTML="Roseanne Park";
+document.getElementById("imageName").src="rose.jpg";
+document.getElementById("imageName").style="display: block; width: 30%; height: auto; margin-left: auto; margin-right: auto; border: 2px solid black";
+document.getElementById("fieldName").style="border: 2px solid black; margin: 20px; display: block;";
+document.getElementById("introductionName").innerHTML="Roseanne Park (born 11 February 1997), better known by the stage name Rosé (Korean: 로제), is a New Zealand singer currently based in South Korea. Rosé signed with South Korean label YG Entertainment following an audition in 2012, training there for four years. She eventually made her debut as a vocalist in the girl group Blackpink in August 2016. As a solo artist, she has featured in labelmate G-Dragon's 2012 track 'Without You', which peaked at number ten on the Gaon Music Chart.";
+}
+
+function lisa() {
+document.getElementById("divName").style="text-align: center; border-left: 2px solid black;";
+document.getElementById("titleName").innerHTML="Lalisa Manoban";
+document.getElementById("imageName").src="lisa.jpg";
+document.getElementById("imageName").style="display: block; width: 30%; height: auto; margin-left: auto; margin-right: auto; border: 2px solid black";
+document.getElementById("fieldName").style="border: 2px solid black; margin: 20px; display: block;";
+document.getElementById("introductionName").innerHTML="Lalisa Manoban (Thai: ลลิษา มโนบาล; born Pranpriya Manoban (Thai: ปราณปรียา มโนบาล) on March 27, 1997), better known by the mononym Lisa (Hangul: 리사), is a Thai rapper, singer and dancer based in South Korea as a member of the South Korean girl group Blackpink under YG Entertainment.";
+}
+</script>
+
+</body>
+<html>
