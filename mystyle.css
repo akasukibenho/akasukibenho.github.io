@@ -99,6 +99,12 @@ body {
 	left: 16px;
 }
 
+.top-right {
+	position: absolute;
+	top: 8px;
+	right: 16px;
+}
+
 .bottom-right {
 	position: absolute;
 	bottom: 8px;
